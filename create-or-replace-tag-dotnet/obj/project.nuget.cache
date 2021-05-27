@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "N0zL3Esr1c73ptV7SlRTRYEa7SY26OSne8SpKMyz8QbzzxP8U2pA0AuKJG0P/oQ7RiKOMD2cw6bQHKkkKUJx4A==",
+  "success": true,
+  "projectFilePath": "M:\\personal\\create-or-replace-tag-dotnet\\create-or-replace-tag-dotnet\\create-or-replace-tag-dotnet.csproj",
+  "expectedPackageFiles": [
+    "M:\\nuget\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
+    "M:\\nuget\\octokit\\0.50.0\\octokit.0.50.0.nupkg.sha512"
+  ],
+  "logs": []
+}

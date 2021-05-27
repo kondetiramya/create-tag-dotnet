@@ -1,0 +1,16 @@
+name: create-or-replace-tag-dotnet
+description: create or replace tag in dotnet
+inputs:
+    inputs:
+  token:
+    description: 'Github token to use to authenticate requests'
+    required: true
+  tag-name:
+    description: 'Name to use for the tag.'
+    required: true
+runs:
+    using: docker
+    image: Dockerfile
+    env:
+        TOKEN: {{ inputs.token }}
+        TAG_NAME: {{ inputs.tag-name }}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "create-or-replace-tag-dotnet", "create-or-replace-tag-dotnet\create-or-replace-tag-dotnet.csproj", "{D681F603-C1BE-4748-9972-EA57605FFD76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D681F603-C1BE-4748-9972-EA57605FFD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D681F603-C1BE-4748-9972-EA57605FFD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D681F603-C1BE-4748-9972-EA57605FFD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D681F603-C1BE-4748-9972-EA57605FFD76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC2B6F55-1095-448E-812B-B8A36A703D9A}
+	EndGlobalSection
+EndGlobal

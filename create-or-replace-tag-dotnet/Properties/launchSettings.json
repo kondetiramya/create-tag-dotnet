@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "create-or-replace-tag-dotnet": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
