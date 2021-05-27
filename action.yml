@@ -1,16 +1,19 @@
-name: create-or-replace-tag-dotnet
-description: create or replace tag in dotnet
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-    inputs:
-  token:
-    description: 'Github token to use to authenticate requests'
+  token:  # id of input
+    description: 'Who to greet'
     required: true
   tag-name:
-    description: 'Name to use for the tag.'
+    description: "Name for the tag"
     required: true
+outputs:
+  ref: # id of output
+    description: 'The time we greeted you'
 runs:
-    using: docker
-    image: Dockerfile
-    env:
-        TOKEN: {{ inputs.token }}
-        TAG_NAME: {{ inputs.tag-name }}
+  using: 'docker'
+  image: 'Dockerfile'
+  #entrypoint: ['entrypoint.sh']
+  args:
+    - ${{ inputs.token }}
+    - ${{ inputs.tag-name }}

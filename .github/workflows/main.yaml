@@ -7,8 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v1
+    - name: checkout code
+      uses: actions/checkout@v2
+      with:
+       fetch-depth: 0
 
     - name: Run the private action
       uses: ./
