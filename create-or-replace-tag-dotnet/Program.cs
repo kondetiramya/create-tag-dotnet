@@ -44,7 +44,7 @@ namespace create_replace_tag_dotnet
                 Console.WriteLine("Creating new reference");
                 try
                 {
-                    var newReference = await client.Git.Reference.Create(owner, repoName, new NewReference($"refs//{reference}", sha));
+                    var newReference = await client.Git.Reference.Create(owner, repoName, new NewReference($"refs/{reference}", sha));
                 }catch(Exception ex)
                 {
                     Console.WriteLine($"Could not create tag: {ex.Message}");
