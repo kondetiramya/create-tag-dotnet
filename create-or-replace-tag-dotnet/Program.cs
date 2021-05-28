@@ -9,8 +9,11 @@ namespace create_replace_tag_dotnet
         public static async Task Main(string[] args)
         {
             var owner = Environment.GetEnvironmentVariable("GITHUB_ACTOR");
+            Console.WriteLine($"Owner: {owner}");
             var repo = Environment.GetEnvironmentVariable("GITHUB_REPOSITORY");
+            Console.WriteLine($"Repo: {repo}");
             var sha = Environment.GetEnvironmentVariable("GITHUB_SHA");
+            Console.WriteLine($"Sha: {sha}");
 
             var token = args[0];
             var tag = args[1];
@@ -30,16 +33,21 @@ namespace create_replace_tag_dotnet
             {
                 Console.WriteLine($"Could not find image: {ex.Message}");
             }
+            catch(Exception)
+            {
+                throw;
+            }
 
             if (existingReference == null)
             {
                 Console.WriteLine("Creating new reference");
                 try
                 {
-                    var newReference = await client.Git.Reference.Create(owner, repo, new NewReference($"refs/{reference}", sha));
+                    var newReference = await client.Git.Reference.Create(owner, repo, new NewReference($"refs//{reference}", sha));
                 }catch(Exception ex)
                 {
-                    Console.WriteLine($"Could not create tag: {ex.StackTrace}");
+                    Console.WriteLine($"Could not create tag: {ex.Message}");
+                    throw;
                 }
             }
         }
